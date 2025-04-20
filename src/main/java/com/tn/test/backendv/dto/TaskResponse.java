@@ -1,22 +1,22 @@
-package com.tn.test.projectManagement.dto;
+package com.tn.test.backendv.dto;
+
+import com.tn.test.backendv.model.Project;
+import com.tn.test.backendv.model.TaskPriority;
+import com.tn.test.backendv.model.TaskStatus;
+import lombok.Data;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
-
+@Data
 public class TaskResponse {
     private Long id;
     private String title;
     private String description;
     private LocalDate dueDate;
-    private String status;
-    private String priority;
-
-    // Assignee
-    private UserResponse assignee;
-
+    private TaskStatus status;
+    private TaskPriority priority;
     // Projet
-    private ProjectResponse project;
+    private Project project;
 
-    private LocalDateTime createdAt;
-    private LocalDateTime updatedAt;
+
 }

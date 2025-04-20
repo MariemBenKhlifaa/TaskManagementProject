@@ -1,9 +1,9 @@
 package com.tn.test.backendv.repository;
 
-import org.springframework.batch.item.ItemReader;
+import com.tn.test.backendv.model.ClassCsv;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface ClassCsv extends JpaRepository<ClassCsv, Long> {
+public interface ClassCsvRepo extends JpaRepository<ClassCsv, Long> {
 }
