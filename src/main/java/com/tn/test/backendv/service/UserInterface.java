@@ -1,4 +1,5 @@
 package com.tn.test.backendv.service;
 
-public class UserInterface {
+public interface UserInterface  {
+
 }

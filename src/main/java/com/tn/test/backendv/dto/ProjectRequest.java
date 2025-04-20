@@ -1,20 +1,19 @@
-package com.tn.test.projectManagement.dto;
+package com.tn.test.backendv.dto;
 
 
+
+import lombok.Data;
 
 import java.time.LocalDate;
-import java.util.List;
 
+@Data
 public class ProjectRequest {
+    private Long id;
 
     private String name;
     private String description;
     private LocalDate startDate;
     private LocalDate endDate;
 
-    // ID du manager, par exemple
-    private Long managerId;
 
-    // Liste d'ID de membres si on souhaite ajouter des utilisateurs lors de la création
-    private List<Long> memberIds;
 }

@@ -1,4 +1,4 @@
-package com.tn.test.projectManagement.dto;
+package com.tn.test.backendv.dto;
 
 import lombok.Getter;
 import lombok.Setter;
